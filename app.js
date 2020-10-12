@@ -6,11 +6,13 @@ function handleSubmit(e){
     
 }
 function elSubmit(e){
-let el=document.getElementById("element-name").value;
-    console.log(el);
-    
-    var x = document.getElementById(el).nodeName;
-    console.log(x);
-    
+    let elVal=document.getElementById("element-name").value;
+    console.log(elVal);
+    let el=document.getElementById(elVal);
+    if(el)
+    { var x = el.nodeName;
+        console.log(x);}
+    else
+    alert('Not Found')    
 }
 
