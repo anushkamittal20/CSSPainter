@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app.js"></script>
-    
         <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
@@ -16,17 +15,21 @@
                 <li><a href="cssedit.html">CSSEdit</a></li>
                 <li style="float:right"><a class="active" href="#about">About</a></li>
               </ul>
-
         </div>
     </div>
-        <div id="htmcontainer">
-        <p >Enter HTML here</p>
-        <input type="text" id="input-form" name="fname">
-       <p> <button id="submit" onclick="handleSubmit()" >Submit</button>
-       </p>
-        
+    <div id="htmlcontainer" class="">
+        <p>Enter HTML here</p>
+        <input type="text" id="input-form" name="htmlInput">
+        <p><button id="submit" onclick="handleSubmit()">Submit</button>
+       </p> 
     </div>
-        
+
+    <div id="csseditor" class="hide">
+        <p>Enter element name</p>
+        <input type="text" id="element-name" name="fname">
+        <button id="submit" onclick="elSubmit()" >Submit</button>
+    <div id=output> </div>  
+    </div>  
 
 </body>
 </html>
