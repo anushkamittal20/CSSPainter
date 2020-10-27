@@ -1,4 +1,5 @@
 
+
 function showCssEditor()
 {   
     let htmleditor=document.getElementById("htmlcontainer")
@@ -27,7 +28,19 @@ function elSubmit(e){
     let el=document.getElementById(elVal);
     if(el)
     { var x = el.nodeName;
+        cssOptions(x);
         console.log(x);}
     else
     alert('Not Found')
+}
+
+function cssOptions(ele){
+    if(ele=='P')
+    pOptions(ele)
+}
+
+function pOptions(ele){
+    let options=document.getElementById("options")
+    pList='<p>Font Size  <input type="text" id="p_font_size"></p>'
+    options.innerHTML=pList
 }

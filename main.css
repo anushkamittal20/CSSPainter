@@ -1,5 +1,6 @@
 body { 
   padding-top: 2px; 
+  overflow-x: hidden;
 }
 ul {
   list-style-type: none;
@@ -47,10 +48,30 @@ li a:active {
  }
 
 #htmcontainer {
-  padding: 50px;
+  padding:50px;
   width: 100%;
 }
 
 .hide{
   display: none;
+}
+
+.main{
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  margin: 1rem auto;
+}
+#output{
+  border:2px solid #122;
+  width: 70vw;
+}
+#options{
+  background-color: #333;
+  width: 25vw;
+  color: white;
+}
+
+#p_font_size{
+  width: 7rem;
 }
